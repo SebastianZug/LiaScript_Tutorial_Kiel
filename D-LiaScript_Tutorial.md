@@ -9,8 +9,9 @@ language: de
 
 narrator: Deutsch Female
 
-comment:  Try to write a short comment about
-          your course, multiline is also okay.
+comment:  Ein Kurs in Kiel.
+
+repository: https://github.com/LiaPlayground/LiaScript_Tutorial_Kiel
 
 -->
 
@@ -22,11 +23,11 @@ comment:  Try to write a short comment about
 **Allgemeine Ziele:**
 
 * __100%__
-  [Markdown](https://en.wikipedia.org/wiki/Markdown)-[Syntax](https://de.wikipedia.org/wiki/Syntax)
+[Markdown](https://en.wikipedia.org/wiki/Markdown)-[Syntax](https://de.wikipedia.org/wiki/Syntax)
 * __90%__
-  [LiaScript](https://LiaScript.github.io)
+[LiaScript](https://LiaScript.github.io)
 * __20%__
-  kennenlernen von [Versionmanagement](https://de.wikipedia.org/wiki/Versionsverwaltung) und kollaborativem Arbeiten mit [git](https://de.wikipedia.org/wiki/Git) und [GitHub](https://github.com)
+kennenlernen von [Versionmanagement](https://de.wikipedia.org/wiki/Versionsverwaltung) und kollaborativem Arbeiten mit [git](https://de.wikipedia.org/wiki/Git) und [GitHub](https://github.com)
 
 ---
 
@@ -259,6 +260,7 @@ Quellen:
 >
 > * Fuzzy Suche: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 > * Speichern: <kbd>Shift</kbd> + <kbd>S</kbd>
+> * __LiaScript-Preview:__ <kbd>Alt</kbd> + <kbd>L</kbd>
 > * Verschieben von Zeilen: <kbd>Ctrl</kbd> + <kbd>ᐃ/ᐁ</kbd>
 > * __LiaScript__:
 >
@@ -306,25 +308,117 @@ Quellen:
 
 ### Dialekte
 
-### Grundlagen
+#### Grundlagen
 
 > Blöcke werden "optisch" durch Leerzeilen voneinander getrennt
 
+
 #### 1. Absätze und Formatierungen
+
+Dies ist ein _Satz_. alö df asdjöflj asöldkfj asöjdf aslkfö
+Dies ist ein zweiter Satz.
+
+_kursiv_ -- *auch kursiv*
+
+__Fett__ -- **auch _fett_**
+
+___Sehr wichtig___
+
+~Durchgestrichen~
+
+
+~~Durchgestrichen~~
+
+Dies ist ein Text ~~~Durchgestrichen~~~ ...
+
+`~~Durchgestrichen~~`
+
+---
+
+**LiaScript**
+
+x^2^
 
 #### 2. Listen
 
+Unordered Lists
+
+* Element 1
+
+  ---
+
+  Dies ist ein zweiter Absatz.
+
+  - Unterabschnitt 1
+  - Unterabschnitt 2
+
+* Element 2
+
+ordered lists
+
+1. Dies ist Wichtig
+
+   Auch das gehört dazu
+
+2. Kaffee
+
+Als zweites kommen die folgenden Zutaten:
+
+3. Tee
+4. Zucker
+
 #### 3. Blockquotes
+
+> “Live as if you were to die tomorrow.
+> Learn as if you were to live forever.”
+>
+> -- **Mahatma** Gandhi
+
 
 #### 4. Tabellen
 
+<!-- data-type="none" -->
+| Header    | 2        | rechts                   |
+| --------- | -------- | ------------------------ |
+| Element 1 | element2 | `code`                   |
+| 12        | **1333** | $ f(x) = \frac{1}{x^2} $ |
+
+
+
 #### 5. Verweise
+
+https://LiaScript.github.io
+
+**[LiaScript-Doku](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md)**
+
+[LiaScript-Tutorial](#LiaScript-Tutorial)
 
 #### 6. Bilder
 
+![Kürbiskopf](https://www.theparisreview.org/blog/wp-content/uploads/2017/03/vertumnus.jpg "Abb: Bild aus der [Sammlung](https://www.theparisreview.org/blog/2017/03/03/sensory-delights/)")
+
+![Nokia](images/nokia.jpeg)
+
 #### 7. Trennlinien
 
+Teil A
+
+---
+
+Teil B
+
 #### 8. Code
+
+```` markdown
+# Titel
+
+## Titel 2
+
+``` JavaScript
+// Drucke Hallo Welt
+console.log("Hallo Welt")
+```
+````
 
 #### 9. HTML
 
@@ -332,11 +426,11 @@ Quellen:
 
 ##### `<details>` & `<summary>`
 
-<details style="background: #EEE">
+<details style="background: green">
 
 <summary>**Honest Textbook ads (click to enlarge)**</summary>
 
-https://www.youtube.com/watch?v=lhSjYT7pWkw
+!?[Ehrliche Bildung](https://www.youtube.com/watch?v=lhSjYT7pWkw)
 
 </details>
 
@@ -346,14 +440,27 @@ https://www.youtube.com/watch?v=lhSjYT7pWkw
 
 ### Multimedia
 
-Verweis -> !Bild --> ?Audio --> !?Video --> ??Unbekannt
+Verweis -> !Bild --> ?Audio --> !?Video --> ??Unbekannt --> Galerie
+
+?[Beethoven](https://soundcloud.com/kenndog/beethoven "Sound")
+!?[Ehrliche Bildung](https://www.youtube.com/watch?v=lhSjYT7pWkw)
+??[Simulation](https://www.falstad.com/circuit/circuitjs.html)
+??[3D](https://sketchfab.com/3d-models/skulpture-b386893fb9bf410cb738b7b7ce076b2b "Dies ist ein Text")
 
 #### Bilder und Texte
 
+![Nokia](images/nokia.jpeg)
+Lorem aösdfjafd saölsjdf aösdfj aslkfdj aösdj asödfjasdj asdfa affs asff asf asf
+
 
 #### Formatierung
+<!--
 
-<!-- style="color: red; font-size: 4rem; max-width: 400px" -->
+comment: kasjdf öajdf aöljfd aölkfjdsö
+
+-->
+
+<!-- style="color: Pink; font-size: 4rem" -->
 Blöcke<!-- style="background: green" --> und einzelne Elemente<!-- style="border: 3px dashed blue" --> können unterschiedlich formatiert werden!
 
 > Merke: Kommentare __vor__ dem Block und __hinter__ dem Element.
@@ -380,12 +487,14 @@ Blöcke<!-- style="background: green" --> und einzelne Elemente<!-- style="borde
 
 ##### Kontrolle der Übersetzung
 
+<!-- class="notranslate" -->
 > Mithilfe von `class="translate"` oder `class="notranslate"` können Element markiert werden, die übersetzt bzw. nicht übersetzt werden sollen.
 
 ---
 
 **Beispiel:**
 
+<!-- class="translate" -->
 ```` markdown
 <!-- class="notranslate" -->
 Alle Code-Elemente werden automatisch mit der Klasse `notranslate` markiert.
@@ -398,11 +507,11 @@ console.log("Hello World")
 
 ### Metainformationen
 
+
+
 ### Präsentationsformate
 
-Buch/Präsentation/Folien
 
-``` markdown
     --{{0}}--
 Ich bin ein Kommentar, der laut vorgelesen werden kann.
 
@@ -422,9 +531,8 @@ Blöcke können auch wieder verschwinden.
 | rechts   |   zentriert    | links |
 | :-)      | $ f(x) = x^2 $ | <-->  |
 
-liatab
 
-    --{{3 Ukrainan Female}}--
+    --{{3 Russian Female}}--
 Первоначально создан в 2004 году Джоном Грубером (англ. John Gruber) и Аароном
 Шварцем.
 Многие идеи языка были позаимствованы из существующих соглашений по
@@ -434,13 +542,16 @@ liatab
     {{3}}
 Oder die Sprache kann geändert werden. Tippe "voice" um
 eine Auswahl der unterstützen Sprachen zu erhalten
-```
+
 
 #### Inline Animationen
 
 Hallo {2}{Welt, } dies ein Absatz mit internen Animationen {1-2}{**die auch wieder verschwinden können**}.
 
 #### Sprachen Lernen `|>` oder `!>`
+
+
+Hallo {|>}{Welt, } dies ein Absatz mit internen Animationen {1-2}{**die auch wieder verschwinden können**}.
 
 #### Versteckte Kommentare
 
@@ -468,6 +579,7 @@ Funktionsübersich: https://katex.org/docs/supported.html
 1. Inline Formeln: `$ ... $` --> $ f(a,b,c) = (a^2+b^2+c^2)^3 $
 2. Block Formeln: `$$ ... $$`
 
+   <!-- style="float: left" -->
    $$
       \sum_{i=1}^\infty\frac{1}{n^2}
            =\frac{\pi^2}{6}
@@ -481,7 +593,7 @@ Funktionsübersich: https://katex.org/docs/supported.html
 
 Zentriert nach `=`
 
-``` latex
+``` latex Formeln
 \begin{split}
   a &=b+c \\
     &=e+f \\
@@ -520,6 +632,33 @@ Definition einer Matrix und Nutzung von HTML.
 @formula
 
 ### Quizzes
+
+Wie heißt dieses Projekt?
+
+[[LiaScript]]
+
+
+Was ist LiaScript?
+
+[[X]] LMS
+[[X]] Eine Sprache?
+[[ ]] Ein Buch
+[[?]] Denk nach
+[[?]] Antwort B
+*****************************************
+
+Es ist auf jeden Fall B.
+
+!?[Ehrliche Bildung](https://www.youtube.com/watch?v=lhSjYT7pWkw)
+
+****************************************
+
+
+Was ist LiaScript?
+
+[(X)] LMS
+[(X)] Eine Sprache?
+[( )] Ein Buch
 
 ### Umfragen
 
